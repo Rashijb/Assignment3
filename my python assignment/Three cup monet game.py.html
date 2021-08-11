@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Three cup monet game.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Three cup monet game.py</font>
+</center></td></tr></table>
+<pre><span class="s0">#first list of cups</span>
+<span class="s1">list_cups = [</span><span class="s2">''</span><span class="s3">,</span><span class="s2">'0'</span><span class="s3">,</span><span class="s2">''</span><span class="s1">]</span>
+<span class="s3">from </span><span class="s1">random </span><span class="s3">import </span><span class="s1">shuffle</span>
+<span class="s1">shuffle(list_cups)</span>
+
+<span class="s3">def </span><span class="s1">shuffle_list(list_cups):</span>
+    <span class="s3">return </span><span class="s1">shuffle(list_cups)</span>
+<span class="s1">result = shuffle_list(list_cups)</span>
+
+<span class="s0">#ask for guess</span>
+<span class="s3">def </span><span class="s1">get_guess():</span>
+    <span class="s1">guess = </span><span class="s2">''</span>
+    <span class="s1">guess = input(</span><span class="s2">&quot;Pic the cup 0,1,2&quot;</span><span class="s1">)</span>
+    <span class="s1">print(guess)</span>
+    <span class="s3">return </span><span class="s1">int(guess)</span>
+
+<span class="s1">guess = get_guess()</span>
+<span class="s0">#now to check if the guess is right or wrong</span>
+<span class="s3">def </span><span class="s1">check_guess(list_cups</span><span class="s3">,</span><span class="s1">guess):</span>
+ <span class="s3">if </span><span class="s1">list_cups[guess] == </span><span class="s2">'0'</span><span class="s1">:</span>
+     <span class="s1">print(</span><span class="s2">&quot;Correct guess&quot;</span><span class="s1">)</span>
+ <span class="s3">else</span><span class="s1">:</span>
+     <span class="s1">print(</span><span class="s2">&quot;Wrong guess&quot;</span><span class="s1">)</span>
+     <span class="s1">print(list_cups)</span>
+
+<span class="s1">check_guess(list_cups</span><span class="s3">,</span><span class="s1">guess)</span>
+
+</pre>
+</body>
+</html>

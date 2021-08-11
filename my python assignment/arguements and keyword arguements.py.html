@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>arguements and keyword arguements.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+arguements and keyword arguements.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># *args and *kwargs</span>
+<span class="s0"># arguements and keyword arguments</span>
+
+<span class="s2">def </span><span class="s1">monthly_expenses(a</span><span class="s2">,</span><span class="s1">b</span><span class="s2">,</span><span class="s1">c</span><span class="s2">,</span><span class="s1">d):</span>
+    <span class="s1">print(</span><span class="s3">&quot;Monthly expenses of&quot;</span><span class="s2">,</span><span class="s1">a</span><span class="s2">,</span><span class="s1">b</span><span class="s2">,</span><span class="s1">c</span><span class="s2">,</span><span class="s1">d</span><span class="s2">,</span><span class="s3">&quot;=&quot;</span><span class="s2">,</span><span class="s1">sum((a</span><span class="s2">,</span><span class="s1">b</span><span class="s2">,</span><span class="s1">c</span><span class="s2">,</span><span class="s1">d)))</span>
+
+
+<span class="s1">monthly_expenses(</span><span class="s4">10000</span><span class="s2">,</span><span class="s4">2000</span><span class="s2">,</span><span class="s4">1300</span><span class="s2">,</span><span class="s4">600</span><span class="s1">)</span>
+
+<span class="s2">def </span><span class="s1">kw_example(**kwargs):</span>
+    <span class="s2">if </span><span class="s3">'animal' </span><span class="s2">in </span><span class="s1">kwargs:</span>
+        <span class="s1">print(kwargs[</span><span class="s3">'animal'</span><span class="s1">])</span>
+    <span class="s2">else</span><span class="s1">:</span>
+        <span class="s1">print(</span><span class="s3">'No living things in the list'</span><span class="s1">)</span>
+
+<span class="s1">kw_example(plant = </span><span class="s3">'banyan'</span><span class="s2">, </span><span class="s1">animal =</span><span class="s3">'tiger'</span><span class="s1">)</span>
+<span class="s1">kw_example(nonliving = </span><span class="s3">'stone'</span><span class="s2">, </span><span class="s1">animal =</span><span class="s3">'panda'</span><span class="s1">)</span>
+
+<span class="s1">kwargs = { </span><span class="s3">'plant'</span><span class="s1">: </span><span class="s3">'banyan'</span><span class="s2">,</span><span class="s3">'animal'</span><span class="s1">:</span><span class="s3">'Lion'</span><span class="s1">}</span>
+<span class="s1">print(kwargs[</span><span class="s3">'animal'</span><span class="s1">])</span>
+<span class="s1">print(kwargs[</span><span class="s3">'plant'</span><span class="s1">])</span>
+
+</pre>
+</body>
+</html>

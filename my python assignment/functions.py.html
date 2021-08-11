@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>functions.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+functions.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># syntax</span>
+<span class="s2">def </span><span class="s1">name_of_function():</span>
+    <span class="s1">print(</span><span class="s3">'sunshine'</span><span class="s1">)</span>
+    <span class="s1">print(</span><span class="s4">2 </span><span class="s1">+ </span><span class="s4">2</span><span class="s1">)</span>
+
+
+<span class="s1">name_of_function()</span>
+
+
+<span class="s0"># passing parameters or arguements to a method</span>
+<span class="s2">def </span><span class="s1">print_name(name):</span>
+    <span class="s1">print(</span><span class="s3">f'Hello </span><span class="s2">{</span><span class="s1">name</span><span class="s2">}</span><span class="s3">'</span><span class="s1">)</span>
+
+
+<span class="s1">print_name(</span><span class="s3">'JaeBeom'</span><span class="s1">)</span>
+<span class="s1">print_name(</span><span class="s3">'Jin'</span><span class="s1">)</span>
+
+
+<span class="s2">def </span><span class="s1">sum_num():</span>
+    <span class="s1">x = input(</span><span class="s3">'Enter first number: '</span><span class="s1">)</span>
+    <span class="s1">y = input(</span><span class="s3">'Enter second number: '</span><span class="s1">)</span>
+    <span class="s1">sum = float(x) + float(y)</span>
+    <span class="s1">print(</span><span class="s3">&quot;sum=&quot;</span><span class="s2">, </span><span class="s1">sum)</span>
+
+
+<span class="s1">sum_num()</span>
+
+
+<span class="s2">def </span><span class="s1">odev_num(nbr):</span>
+    <span class="s2">if </span><span class="s1">nbr % </span><span class="s4">2 </span><span class="s1">== </span><span class="s4">0</span><span class="s1">:</span>
+        <span class="s1">print(nbr</span><span class="s2">,</span><span class="s3">'is even'</span><span class="s1">)</span>
+    <span class="s2">else</span><span class="s1">:</span>
+        <span class="s1">print(nbr</span><span class="s2">,</span><span class="s3">'is odd'</span><span class="s1">)</span>
+
+
+<span class="s1">odev_num(</span><span class="s4">23</span><span class="s1">)</span>
+
+<span class="s0">#to check if even/odd number present in a list</span>
+<span class="s2">def </span><span class="s1">chk_num(list1):</span>
+    <span class="s2">for </span><span class="s1">num </span><span class="s2">in </span><span class="s1">list1:</span>
+        <span class="s2">if </span><span class="s1">num%</span><span class="s4">2 </span><span class="s1">&gt; </span><span class="s4">0</span><span class="s1">:</span>
+            <span class="s2">return True</span>
+        <span class="s2">else</span><span class="s1">:</span>
+            <span class="s2">return False</span>
+
+
+<span class="s1">list1 = [</span><span class="s4">2</span><span class="s2">,</span><span class="s4">3</span><span class="s2">,</span><span class="s4">4</span><span class="s2">,</span><span class="s4">5</span><span class="s2">,</span><span class="s4">6</span><span class="s2">,</span><span class="s4">7</span><span class="s1">]</span>
+<span class="s1">chk_num(list1)</span>
+</pre>
+</body>
+</html>

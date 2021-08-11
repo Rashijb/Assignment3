@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>tuple unpacking.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+.s3 { color: #cc7832;}
+.s4 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+tuple unpacking.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># tuple unpacking</span>
+<span class="s1">tup_nbr = (</span><span class="s2">4</span><span class="s3">, </span><span class="s2">5</span><span class="s3">, </span><span class="s2">8</span><span class="s3">, </span><span class="s2">9</span><span class="s1">)</span>
+<span class="s3">for </span><span class="s1">item </span><span class="s3">in </span><span class="s1">tup_nbr:</span>
+    <span class="s1">print(item)</span>
+<span class="s1">list_tpl = [(</span><span class="s2">4</span><span class="s3">, </span><span class="s2">5</span><span class="s1">)</span><span class="s3">, </span><span class="s1">(</span><span class="s2">8</span><span class="s3">, </span><span class="s2">9</span><span class="s1">)]</span>
+<span class="s3">for </span><span class="s1">item </span><span class="s3">in </span><span class="s1">list_tpl:</span>
+    <span class="s1">print(item)</span>
+
+<span class="s1">list1 = [(</span><span class="s2">2</span><span class="s3">, </span><span class="s2">3</span><span class="s3">, </span><span class="s2">4</span><span class="s1">)</span><span class="s3">, </span><span class="s1">(</span><span class="s2">9</span><span class="s3">, </span><span class="s2">8</span><span class="s3">, </span><span class="s2">7</span><span class="s1">)</span><span class="s3">, </span><span class="s1">(</span><span class="s2">1</span><span class="s3">, </span><span class="s2">5</span><span class="s3">, </span><span class="s2">6</span><span class="s1">)]</span>
+<span class="s3">for </span><span class="s1">item </span><span class="s3">in </span><span class="s1">list1:</span>
+    <span class="s1">print(item)</span>
+<span class="s3">else</span><span class="s1">:</span>
+    <span class="s1">print(</span><span class="s4">&quot;list printed&quot;</span><span class="s1">)</span>
+
+<span class="s3">for </span><span class="s1">a</span><span class="s3">, </span><span class="s1">b</span><span class="s3">, </span><span class="s1">c </span><span class="s3">in </span><span class="s1">list1:</span>
+    <span class="s1">print(a)</span>
+
+<span class="s0"># for loop for dictionary</span>
+<span class="s1">dict_1 = {</span><span class="s4">'bts'</span><span class="s1">: </span><span class="s2">2013</span><span class="s3">, </span><span class="s4">'got7'</span><span class="s1">: </span><span class="s2">2014</span><span class="s3">, </span><span class="s4">'bigbang'</span><span class="s1">: </span><span class="s2">2006</span><span class="s1">}</span>
+<span class="s1">print(dict_1)</span>
+<span class="s3">for </span><span class="s1">item </span><span class="s3">in </span><span class="s1">dict_1.items():</span>
+    <span class="s1">print(item)</span>
+<span class="s3">else</span><span class="s1">:print(</span><span class="s4">&quot;dict unpacked&quot;</span><span class="s1">)</span>
+<span class="s3">for </span><span class="s1">x</span><span class="s3">,</span><span class="s1">y </span><span class="s3">in </span><span class="s1">dict_1.items():</span>
+    <span class="s1">print(x)</span>
+    <span class="s1">print(y)</span>
+
+<span class="s0">#pass</span>
+<span class="s1">print(</span><span class="s4">&quot;practice of pass&quot;</span><span class="s1">)</span>
+<span class="s1">list2=[</span><span class="s2">5</span><span class="s3">,</span><span class="s2">6</span><span class="s3">,</span><span class="s2">7</span><span class="s3">,</span><span class="s2">8</span><span class="s3">,</span><span class="s2">9</span><span class="s1">]</span>
+<span class="s1">print(list2)</span>
+<span class="s3">for </span><span class="s1">num </span><span class="s3">in </span><span class="s1">list2:</span>
+    <span class="s3">pass</span>
+<span class="s1">print(list2)</span>
+
+<span class="s0">#continue</span>
+<span class="s1">print(</span><span class="s4">&quot;practice of continue&quot;</span><span class="s1">)</span>
+<span class="s1">list_2=[</span><span class="s2">2</span><span class="s3">,</span><span class="s2">3</span><span class="s3">,</span><span class="s2">4</span><span class="s3">,</span><span class="s2">5</span><span class="s1">]</span>
+<span class="s1">print(list_2)</span>
+<span class="s3">for </span><span class="s1">num </span><span class="s3">in </span><span class="s1">list_2:</span>
+    <span class="s3">if </span><span class="s1">num == </span><span class="s2">2</span><span class="s1">:</span>
+        <span class="s3">continue</span>
+    <span class="s1">print(num)</span>
+
+<span class="s0">#break</span>
+<span class="s1">print(</span><span class="s4">&quot;practice of break&quot;</span><span class="s1">)</span>
+<span class="s1">list_3=[</span><span class="s2">9</span><span class="s3">,</span><span class="s2">8</span><span class="s3">,</span><span class="s2">7</span><span class="s3">,</span><span class="s2">6</span><span class="s3">,</span><span class="s2">5</span><span class="s1">]</span>
+<span class="s1">print(list_3)</span>
+<span class="s3">for </span><span class="s1">num </span><span class="s3">in </span><span class="s1">list_3:</span>
+    <span class="s3">if </span><span class="s1">num == </span><span class="s2">6</span><span class="s1">:</span>
+        <span class="s3">break</span>
+    <span class="s1">print(num)</span>
+
+<span class="s1">print(</span><span class="s4">'outside the for loop'</span><span class="s1">)</span>
+
+<span class="s0">#break in while loop</span>
+<span class="s1">r=</span><span class="s2">0</span>
+<span class="s3">while</span><span class="s1">(r&lt;</span><span class="s2">10</span><span class="s1">):</span>
+    <span class="s1">print(r)</span>
+    <span class="s1">r=r+</span><span class="s2">2</span>
+
+    <span class="s1">s=</span><span class="s2">10</span>
+    <span class="s3">while</span><span class="s1">(s&gt;</span><span class="s2">0</span><span class="s1">):</span>
+        <span class="s1">print(s)</span>
+        <span class="s1">s=s-</span><span class="s2">2</span>
+
+        
+
+
+
+</pre>
+</body>
+</html>

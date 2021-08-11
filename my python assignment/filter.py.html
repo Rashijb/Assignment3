@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>filter.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6897bb;}
+.s2 { color: #cc7832;}
+.s3 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+filter.py</font>
+</center></td></tr></table>
+<pre><span class="s0">my_list = [</span><span class="s1">12</span><span class="s2">, </span><span class="s1">22</span><span class="s2">, </span><span class="s1">33</span><span class="s2">, </span><span class="s1">56</span><span class="s2">, </span><span class="s1">78</span><span class="s2">, </span><span class="s1">97</span><span class="s0">]</span>
+
+
+<span class="s2">def </span><span class="s0">even_check(num):</span>
+    <span class="s2">return </span><span class="s0">num%</span><span class="s1">2 </span><span class="s0">== </span><span class="s1">0</span>
+
+<span class="s2">def </span><span class="s0">odd_check(num):</span>
+    <span class="s2">return </span><span class="s0">num%</span><span class="s1">2 </span><span class="s0">!= </span><span class="s1">0</span>
+<span class="s0">even_numbers=list(filter(even_check</span><span class="s2">, </span><span class="s0">my_list))</span>
+<span class="s0">print(even_numbers)</span>
+
+
+<span class="s0">filter_list=list(filter(odd_check</span><span class="s2">,</span><span class="s0">my_list))</span>
+<span class="s0">print(filter_list)</span>
+
+<span class="s3">#for lambda functions</span>
+<span class="s0">square = </span><span class="s2">lambda </span><span class="s0">x : x * x</span>
+<span class="s0">print(square(</span><span class="s1">55</span><span class="s0">))</span>
+
+<span class="s0">sqr=list(map(</span><span class="s2">lambda </span><span class="s0">x : x**</span><span class="s1">2</span><span class="s2">,</span><span class="s0">my_list))</span>
+<span class="s0">print(sqr)</span></pre>
+</body>
+</html>

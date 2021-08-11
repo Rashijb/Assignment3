@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>lists.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+.s3 { color: #cc7832;}
+.s4 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+lists.py</font>
+</center></td></tr></table>
+<pre><span class="s0">#lists</span>
+<span class="s1">list_num=[</span><span class="s2">10</span><span class="s3">,</span><span class="s2">9</span><span class="s3">,</span><span class="s2">8</span><span class="s3">,</span><span class="s2">7</span><span class="s3">,</span><span class="s2">6</span><span class="s3">,</span><span class="s2">5</span><span class="s3">,</span><span class="s2">4</span><span class="s3">,</span><span class="s2">3</span><span class="s3">,</span><span class="s2">2</span><span class="s3">,</span><span class="s2">1</span><span class="s3">,</span><span class="s2">0</span><span class="s1">]</span>
+<span class="s1">print(list_num)</span>
+<span class="s1">list_mixed=[</span><span class="s4">'Hope'</span><span class="s3">,</span><span class="s2">2021</span><span class="s3">,</span><span class="s4">'is'</span><span class="s3">,</span><span class="s4">'great'</span><span class="s1">]</span>
+<span class="s1">print(list_mixed)</span>
+
+<span class="s0">#indexing and slicing in list</span>
+<span class="s1">print(list_mixed[</span><span class="s2">2</span><span class="s1">])</span>
+<span class="s1">print(list_mixed[</span><span class="s2">2</span><span class="s1">:</span><span class="s2">5</span><span class="s1">])</span>
+<span class="s1">print(list_num[</span><span class="s2">6</span><span class="s1">:</span><span class="s2">10</span><span class="s1">])</span>
+
+<span class="s0">#step in list</span>
+<span class="s1">print(list_num[</span><span class="s2">2</span><span class="s1">::</span><span class="s2">2</span><span class="s1">])</span>
+
+<span class="s0">#concatenation</span>
+<span class="s1">list_1=[</span><span class="s4">'my'</span><span class="s3">,</span><span class="s4">'name'</span><span class="s3">,</span><span class="s1">]</span>
+<span class="s1">list_2=[</span><span class="s4">'is'</span><span class="s3">,</span><span class="s4">'peace'</span><span class="s1">]</span>
+<span class="s1">list_3= list_1 + list_2</span>
+<span class="s1">print(list_1)</span>
+<span class="s1">print(list_2)</span>
+<span class="s1">print(list_3)</span>
+
+<span class="s0">#lists are mutable unlike strings</span>
+<span class="s1">list_1[</span><span class="s2">0</span><span class="s1">] = </span><span class="s4">'My'</span>
+<span class="s1">print(list_1)</span>
+
+<span class="s0">#adding elements to the list</span>
+<span class="s1">list_4=[</span><span class="s2">6</span><span class="s3">,</span><span class="s2">9</span><span class="s3">,</span><span class="s2">3</span><span class="s3">,</span><span class="s2">1</span><span class="s1">]</span>
+<span class="s1">print(list_4)</span>
+<span class="s1">list_4.append(</span><span class="s2">11</span><span class="s1">)</span>
+<span class="s1">print(list_4)</span>
+<span class="s1">print(list_4.pop())</span>
+<span class="s1">print(list_4)</span>
+<span class="s1">print(list_4.pop(</span><span class="s2">2</span><span class="s1">))</span>
+<span class="s1">print(list_4)</span>
+
+<span class="s0">#sorting the list</span>
+<span class="s1">list_nmb=[</span><span class="s2">12</span><span class="s3">,</span><span class="s2">45</span><span class="s3">,</span><span class="s2">21</span><span class="s3">,</span><span class="s2">35</span><span class="s3">,</span><span class="s2">77</span><span class="s3">,</span><span class="s2">33</span><span class="s3">,</span><span class="s2">99</span><span class="s1">]</span>
+<span class="s1">print(list_nmb)</span>
+<span class="s1">list_nmb.sort()</span>
+<span class="s1">print(list_nmb)</span>
+
+<span class="s0">#lenght of the list</span>
+<span class="s1">print(len(list_nmb))</span>
+
+<span class="s0">#reverse</span>
+<span class="s1">list_nmb.reverse()</span>
+<span class="s1">print(list_nmb)</span>
+
+
+</pre>
+</body>
+</html>

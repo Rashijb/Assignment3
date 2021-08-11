@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>List comprehension.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #cc7832;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+List comprehension.py</font>
+</center></td></tr></table>
+<pre><span class="s0">#list comprehension</span>
+<span class="s0">#unique way to create a list</span>
+<span class="s0">#alternative for creating a list with for loop and apppend method from typing import List, Any</span>
+
+<span class="s1">msg=</span><span class="s2">&quot;awaken&quot;</span>
+<span class="s1">list3=[]</span>
+<span class="s3">for </span><span class="s1">char </span><span class="s3">in </span><span class="s1">msg:</span>
+    <span class="s1">list3.append(char)</span>
+<span class="s1">print(list3)</span>
+
+<span class="s0">#or</span>
+
+<span class="s1">mymsg=</span><span class="s2">&quot;sleepy&quot;</span>
+<span class="s1">list2=[char </span><span class="s3">for </span><span class="s1">char </span><span class="s3">in </span><span class="s1">mymsg ]</span>
+<span class="s1">print(</span><span class="s2">&quot;List2=&quot;</span><span class="s3">,</span><span class="s1">list2)</span>
+
+<span class="s0">#another example</span>
+<span class="s3">for </span><span class="s1">num </span><span class="s3">in </span><span class="s1">range(</span><span class="s4">1</span><span class="s3">,</span><span class="s4">5</span><span class="s1">):</span>
+    <span class="s1">num=num**</span><span class="s4">2</span>
+    <span class="s1">print(num)</span>
+<span class="s1">print(</span><span class="s2">&quot;another method&quot;</span><span class="s1">)</span>
+<span class="s1">sqrs=[num**</span><span class="s4">2 </span><span class="s3">for </span><span class="s1">num </span><span class="s3">in </span><span class="s1">range(</span><span class="s4">0</span><span class="s3">,</span><span class="s4">5</span><span class="s1">)]</span>
+<span class="s1">print(sqrs)</span>
+
+
+</pre>
+</body>
+</html>

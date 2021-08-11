@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Datatypes(rashi).py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #cc7832;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Datatypes(rashi).py</font>
+</center></td></tr></table>
+<pre><span class="s0"># the print command</span>
+<span class="s1">print(</span><span class="s2">&quot;Assignment3&quot;</span><span class="s1">)</span>
+<span class="s0"># To perform arithmetic operations</span>
+<span class="s1">print(</span><span class="s2">&quot;2 + 2 =&quot;</span><span class="s3">, </span><span class="s4">2 </span><span class="s1">+ </span><span class="s4">2</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s2">&quot;20 - 5 =&quot;</span><span class="s3">, </span><span class="s4">20 </span><span class="s1">- </span><span class="s4">5</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s2">&quot;20 / 5 =&quot;</span><span class="s3">, </span><span class="s4">20 </span><span class="s1">/ </span><span class="s4">5</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s2">&quot;20 * 5 =&quot;</span><span class="s3">, </span><span class="s4">20 </span><span class="s1">* </span><span class="s4">5</span><span class="s1">)</span>
+
+<span class="s0"># modula operator (gives remainder)</span>
+<span class="s1">print(</span><span class="s2">&quot;20 % 2 =&quot;</span><span class="s3">, </span><span class="s4">20 </span><span class="s1">% </span><span class="s4">2</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s2">&quot;23 % 2 =&quot;</span><span class="s3">, </span><span class="s4">23 </span><span class="s1">% </span><span class="s4">2</span><span class="s1">)</span>
+
+<span class="s0"># for exponents</span>
+<span class="s1">print(</span><span class="s2">&quot;11 ** 2 =&quot;</span><span class="s3">, </span><span class="s4">11 </span><span class="s1">** </span><span class="s4">2</span><span class="s1">)</span>
+
+<span class="s0"># to check order of preferance (bodmas applied)</span>
+<span class="s1">print(</span><span class="s2">&quot;2 + 2 * 15 - 5  =&quot;</span><span class="s3">, </span><span class="s4">2 </span><span class="s1">+ </span><span class="s4">2 </span><span class="s1">* </span><span class="s4">15 </span><span class="s1">- </span><span class="s4">5</span><span class="s1">)</span>
+
+<span class="s0"># when you want to give prefernce to set of functions of choice then use brackets</span>
+<span class="s1">print(</span><span class="s2">&quot;(2 + 2) * (15 - 5) =&quot;</span><span class="s3">, </span><span class="s1">(</span><span class="s4">2 </span><span class="s1">+ </span><span class="s4">2</span><span class="s1">) * (</span><span class="s4">15 </span><span class="s1">- </span><span class="s4">5</span><span class="s1">))</span>
+
+<span class="s0"># variables to perform operations</span>
+<span class="s1">a = </span><span class="s4">22</span>
+<span class="s1">v = </span><span class="s4">33</span>
+<span class="s1">sum = a + v</span>
+<span class="s1">print(</span><span class="s2">&quot;a =&quot;</span><span class="s3">, </span><span class="s1">a)</span>
+<span class="s1">print(</span><span class="s2">&quot;v =&quot;</span><span class="s3">, </span><span class="s1">v)</span>
+<span class="s1">print(</span><span class="s2">&quot;a + v = &quot;</span><span class="s3">, </span><span class="s1">sum)</span>
+<span class="s1">my_name = </span><span class="s2">&quot;rashi&quot;</span>
+<span class="s1">print(my_name)</span>
+
+<span class="s0"># to check the datatype of variables</span>
+<span class="s1">print (type(my_name))</span>
+<span class="s1">print (type(a))</span>
+
+<span class="s0">#example performing logic using variable names</span>
+<span class="s1">Total_marks = </span><span class="s4">200</span>
+<span class="s1">marks = </span><span class="s4">165</span>
+<span class="s1">percentage = ( marks / Total_marks ) * </span><span class="s4">100</span>
+<span class="s1">print ( </span><span class="s2">&quot;marks =&quot;</span><span class="s3">, </span><span class="s1">marks)</span>
+<span class="s1">print ( </span><span class="s2">&quot;Total marks =&quot;</span><span class="s3">, </span><span class="s1">Total_marks)</span>
+<span class="s1">print ( </span><span class="s2">&quot;Percentage =&quot;</span><span class="s3">, </span><span class="s1">percentage)</span>
+
+<span class="s0">#strings</span>
+<span class="s1">planet = </span><span class="s2">&quot;mars&quot;</span>
+<span class="s1">star = </span><span class="s2">'brunomars'</span>
+<span class="s1">print ( planet</span><span class="s3">,</span><span class="s1">star)</span>
+
+<span class="s0">#replacing a letter in a string</span>
+<span class="s1">print (</span><span class="s2">&quot;name = &quot;</span><span class="s3">, </span><span class="s1">planet)</span>
+<span class="s0">#slicing</span>
+<span class="s1">print (planet[</span><span class="s4">1</span><span class="s1">:</span><span class="s4">4</span><span class="s1">])</span>
+<span class="s1">print(</span><span class="s2">&quot;c&quot; </span><span class="s1">+ planet[</span><span class="s4">1</span><span class="s1">:</span><span class="s4">4</span><span class="s1">])</span>
+<span class="s1">new=</span><span class="s2">&quot;c&quot; </span><span class="s1">+ planet[</span><span class="s4">1</span><span class="s1">:</span><span class="s4">3</span><span class="s1">] + </span><span class="s2">&quot;d&quot;</span>
+<span class="s1">print(</span><span class="s2">&quot;new=&quot;</span><span class="s3">,</span><span class="s1">new)</span>
+
+<span class="s1">yes=</span><span class="s2">&quot;hello from the other side&quot;</span>
+<span class="s1">print(yes)</span>
+<span class="s1">print(yes [</span><span class="s4">0</span><span class="s1">:</span><span class="s4">5</span><span class="s1">])</span>
+<span class="s1">print(yes [</span><span class="s4">0</span><span class="s1">:</span><span class="s4">19</span><span class="s1">:</span><span class="s4">3</span><span class="s1">])</span>
+<span class="s0">#indexing</span>
+<span class="s1">new_1=new[</span><span class="s4">0</span><span class="s1">]</span>
+<span class="s1">print(new_1)</span>
+
+<span class="s0">#string concatination</span>
+<span class="s1">wow=new + planet</span>
+<span class="s1">print(wow)</span>
+
+<span class="s0">#to repeat a string multiple times</span>
+<span class="s1">group= planet * </span><span class="s4">10</span>
+<span class="s1">print(group)</span>
+
+<span class="s0">#string methods</span>
+<span class="s0">#to print in upper/lower case</span>
+<span class="s1">print(new)</span>
+<span class="s1">print(new.upper())</span>
+<span class="s1">cool=</span><span class="s2">&quot;HOUSE&quot;</span>
+<span class="s1">print(cool)</span>
+<span class="s1">print(cool.lower())</span>
+
+<span class="s0">#to split a sentece</span>
+<span class="s1">sentence=</span><span class="s2">&quot;see you in 2050&quot;</span>
+<span class="s1">print(sentence)</span>
+<span class="s1">print(sentence.split())</span>
+<span class="s1">print(sentence.split(</span><span class="s2">'0'</span><span class="s1">))</span>
+
+<span class="s0">#print formatting</span>
+<span class="s1">print(sentence)</span>
+<span class="s1">year=</span><span class="s2">&quot;2051&quot;</span>
+<span class="s1">print(</span><span class="s2">f'see you in </span><span class="s3">{</span><span class="s1">year</span><span class="s3">}</span><span class="s2">'</span><span class="s1">)</span>
+
+
+</pre>
+</body>
+</html>

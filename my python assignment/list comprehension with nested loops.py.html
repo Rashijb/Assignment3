@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>list comprehension with nested loops.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #6897bb;}
+.s4 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+list comprehension with nested loops.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># nested list</span>
+<span class="s2">for </span><span class="s1">a </span><span class="s2">in </span><span class="s1">[</span><span class="s3">3</span><span class="s2">, </span><span class="s3">4</span><span class="s2">, </span><span class="s3">5</span><span class="s1">]:</span>
+    <span class="s2">for </span><span class="s1">b </span><span class="s2">in </span><span class="s1">[</span><span class="s3">9</span><span class="s2">, </span><span class="s3">8</span><span class="s2">, </span><span class="s3">7</span><span class="s1">]:</span>
+        <span class="s1">print(a</span><span class="s2">, </span><span class="s4">&quot;*&quot;</span><span class="s2">, </span><span class="s1">b</span><span class="s2">, </span><span class="s4">&quot;=&quot;</span><span class="s2">, </span><span class="s1">a * b)</span>
+
+<span class="s0"># or</span>
+<span class="s1">nestd_list = [x + y </span><span class="s2">for </span><span class="s1">x </span><span class="s2">in </span><span class="s1">[</span><span class="s3">1</span><span class="s2">, </span><span class="s3">2</span><span class="s2">, </span><span class="s3">3</span><span class="s1">] </span><span class="s2">for </span><span class="s1">y </span><span class="s2">in </span><span class="s1">[</span><span class="s3">7</span><span class="s2">, </span><span class="s3">8</span><span class="s2">, </span><span class="s3">9</span><span class="s1">]]</span>
+<span class="s1">print(</span><span class="s4">&quot;The nested list=&quot;</span><span class="s2">, </span><span class="s1">nestd_list)</span>
+
+<span class="s1">nestd_list.insert(</span><span class="s3">0</span><span class="s2">, </span><span class="s3">100</span><span class="s1">)</span>
+<span class="s1">print(nestd_list)</span>
+
+</pre>
+</body>
+</html>
